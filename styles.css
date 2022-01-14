@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+
+body {
+  background: rgb(179, 179, 179);
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  width: 375px;
+  height: 812px;
+  background: white;
+  border-radius: 34px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.removeOnButton {
+  position: absolute;
+}
+svg {
+  position: absolute;
+}
+.text {
+  position: absolute;
+  width: 280px;
+  height: 182px;
+  left: 30px;
+  top: 503px;
+  user-select: none;
+}
+.text h2 {
+  font-family: Sen;
+  font-weight: bold;
+  font-size: 37px;
+  line-height: 60px;
+  padding-bottom: 1rem;
+}
+.text p {
+  font-family: Sen;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  color: #8399a9;
+}
+#btn-get-started {
+  position: absolute;
+  background: black;
+  width: 191px;
+  height: 70px;
+  top: 100%;
+  left: 100%;
+  transform: translate(-100%, -100%);
+  color: white;
+  border: none;
+  border-top-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+/* second page */
+#main-page{
+  display: none;
+  z-index: 0;
+}
+#shop-page{
+  display: none;
+}
+
+.greet {
+  position: absolute;
+  top: 46px;
+  left: 24px;
+  font-size: 1rem;
+  width: 138px;
+  height: 84px;
+}
+.yellow-amanda {
+  color: #ffc74a;
+  font-weight: bolder;
+}
+#summer-collections {
+  position: absolute;
+  width: 327px;
+  height: 137px;
+  top: 191px;
+  left: 24px;
+  background: #fff3e7;
+  border-radius: 34px;
+  cursor: pointer;
+}
+#summer-text {
+  position: relative;
+  width: 126px;
+  height: 68px;
+  font-weight: 800;
+  top: 221px;
+  left: 51px;
+  cursor: pointer;
+}
+#summer-image {
+  position: absolute;
+  width: 125px;
+  height: 182px;
+  top: 146px;
+  left: 208px;
+  cursor: pointer;
+}
+#winter-collections {
+  position: absolute;
+  width: 327px;
+  height: 137px;
+  top: 389px;
+  left: 24px;
+  background: #FCDFEA;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#winter-text {
+  position: relative;
+  width: 126px;
+  height: 68px;
+  font-weight: 800;
+  top: 353px;
+  left: 51px;
+  cursor: pointer;
+}
+#winter-image {
+  position: absolute;
+  width: 125px;
+  height: 182px;
+  top: 344px;
+  left: 208px;
+  cursor: pointer;
+}
+.offers{
+  width: 101px;
+  height: 42px;
+  position: absolute;
+  top: 550px;
+  left: 50%;
+  transform: translate(-51%, 0%);
+}
+.offer-collections{
+  position: absolute;
+  width: 327px;
+  height: 167px;
+  top: 620px;
+  left: 24px;
+  background: #EAF0FF;
+  border-radius: 34px;
+}
+.sale{
+  display: flex;
+  position: absolute;
+  top: 85%;
+  left: 75%;
+  transform: translate(-100%, -100%);
+  font-size: 1.5rem;
+}
+.purple-text{
+  color: #6B63DD;
+}
+#knowMore{
+  position: absolute;
+  background: black;
+  width: 191px;
+  height: 70px;
+  top: 100%;
+  left: 100%;
+  transform: translate(-150%, -150%);
+  color: white;
+  border: none;
+  border-radius: 34px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+/* shop page */
+#shop-page{
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #FFF3E7;
+  border-radius: 34px;
+  overflow: hidden;
+  z-index: 100;
+}
+.shop-image{
+  position: absolute;
+}
+.top-nav{
+  position: absolute;
+}
+.back-button{
+  top: 24px;
+  left: 24px;
+  position: absolute;
+  cursor: pointer;
+}
+.back-button:hover,
+.wishlist-button:hover,
+.busket-button:hover{
+  transform: scale(1.1);
+}
+.wishlist-button{
+  top: 24px;
+  left: 255px;
+  position: absolute;
+  cursor: pointer;
+}
+.busket-button{
+  top: 24px;
+  left: 313px;
+  position: absolute;
+  cursor: pointer;
+}
+.item-description{
+  width: 351px;
+  height: 284px;
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 34px;
+  top: 528px;
+  left: 24px;
+}
+.sizes{
+  position: absolute;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  top: 110px;
+  width: 100%;
+}
+.size{
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1.6rem;
+  border-radius: 12px;
+}
+.size:hover{
+  background: rgb(160, 175, 20);
+  color: white;
+}
+.active{
+  background: black;
+  color: white;
+  transition: 0.5s ease;
+}
+.active:hover{
+  background: black;
+  color: white;
+}
+.item-description h1{
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+.item-description h2{
+  position: absolute;
+  top: 83px;
+  left: 24px;
+}
+.price-discount{
+  position: absolute;
+  top: 197px;
+  left: 24px;
+}
+.price{
+  display: flex;
+  font-size: 1.5rem;
+}
+.old-price{
+  color: #8399A9;
+  text-decoration: line-through;
+}
+.new-price{
+  color: #0DA75F;
+}
+#Add-to-Bag {
+  position: absolute;
+  background: black;
+  width: 165px;
+  height: 70px;
+  top: 214px;
+  left: 186px;
+  color: white;
+  border: none;
+  border-top-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.purchase{
+  display: flex;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 34px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+}
+#add{
+  position: absolute;
+  display: flex;
+  width: 27px;
+  height: 27px;
+  top: 31px;
+  left: 345px;
+  border-radius: 50%;
+  text-align: center;
+  text-shadow: 1px 1px white;
+  z-index: 0;
+  display: none;
+}
+#add h2{
+  color: rgb(174, 0, 255);
+  font-size: 1.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  opacity: 0.8;
+  text-shadow: 2px 0px 4px black;
+}
+#img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#back:hover{
+  transform: rotate(-90deg) scale(1.1) !important;
+}
